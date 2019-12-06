@@ -7,8 +7,8 @@ public class Palindrome {
      */
     public boolean isPalindrome(String text) {
         String polindrom = text.replaceAll("[^\\w]+", "").toLowerCase();
-        StringBuffer sb = new StringBuffer(polindrom);
+        StringBuilder sb = new StringBuilder(polindrom);
         String polindromReverse = new String(sb.reverse());
-        return polindromReverse.equals(polindrom.toLowerCase());
+        return polindromReverse.equals(polindrom);
     }
 }
